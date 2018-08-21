@@ -1,0 +1,21 @@
+
+.Formpagewrap{   
+    margin-left:2%;
+    padding: 45px;
+    width:68%;
+    height: 61vh;
+}
+.Formbuttonwrap{ 
+    margin-left: 35%;
+    margin-top:10%;
+}
+
+.contentWrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto; 
+}
+
+.MidContentWrap { width: 100%;  max-width: 600px; margin:30px auto; }
+.TabTxtWrap .radio{ font-size: 16px; margin: 20px 0px; }
+.formOutterWrap{ width: 100%;  float: left; padding: 20px 0px;}
