@@ -41,6 +41,7 @@ export class SignupForm extends Component {
     super(props);
   }
   onSubmitCall = values => {
+    
     let email = values.email;
     let getDomain = email.substring(email.lastIndexOf("."));
     getDomain = getDomain.toLowerCase();
@@ -49,6 +50,8 @@ export class SignupForm extends Component {
     } else if (getDomain == ".gov") {
       history.push("/gov");
     }
+
+    
   };
 
   render() {
@@ -61,8 +64,8 @@ export class SignupForm extends Component {
     return (
       <div className="formWrap">
         <h1 className="signupTitle_1">
-          {" "}
-          {/*<img src={logofavicon} alt="" /> <br /> New to Overstock professional?*/}
+         {/* {" "}
+          <img src={logofavicon} alt="" /> <br /> New to Overstock professional? */}
           Sign Up.
         </h1>
         <form onSubmit={handleSubmit(handlePagesOnSubmit)}>
@@ -79,7 +82,7 @@ export class SignupForm extends Component {
             label="Create Password"
           />
           <div className="form-group">
-            <Button type="submit" className="createAccBtn">
+            <Button type="submit" className="createAccBtn" name="button">
               Create Account
             </Button>
           </div>
