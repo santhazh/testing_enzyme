@@ -13,10 +13,10 @@ const store = createStore(
 
 Enzyme.configure({ adapter: new Adapter() });
 
-export const renderWithStore=(Component)=>(
+export const renderWithStore=(Component,...others)=>(
     mount(
     <Provider store={store}>
-        <Component />
+        <Component {...others}/>
       </Provider>
     )
 );

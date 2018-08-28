@@ -39,8 +39,9 @@ const renderField = ({ label, type, input, meta: { touched, error } }) => (
 export class SignupForm extends Component {
   constructor(props) {
     super(props);
+    this.onSubmitCall=this.onSubmitCall.bind(this);
   }
-  onSubmitCall = values => {
+  onSubmitCall (values){
     
     let email = values.email;
     let getDomain = email.substring(email.lastIndexOf("."));
@@ -50,8 +51,6 @@ export class SignupForm extends Component {
     } else if (getDomain == ".gov") {
       history.push("/gov");
     }
-
-    
   };
 
   render() {
